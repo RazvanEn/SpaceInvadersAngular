@@ -1,0 +1,20 @@
+<div class="canvas-container">
+<canvas #canvas style=" z-index:1;height: 100%; width: 100%; background-image: url('https://firebasestorage.googleapis.com/v0/b/my-awesome-project-238c6.appspot.com/o/background.jpg?alt=media&token=cd8709e6-c648-4bec-a01e-5f731cc30a30')">
+</canvas>
+<button type="button" class="startbtn btn  btn-lg" *ngIf="$stopped.value" (click)="$stopped.next(false)">Start</button>
+<h1>
+	<label class="purplelbl3 label label-default" *ngIf="lives <= 0">Game Over</label>
+</h1>
+<p>
+  <label class="purplelbl label label-default">Score: {{ score }}</label>
+</p>
+<p>
+  <label class="purplelbl1 label label-default">Round: {{ round }}</label> 
+</p>
+<p>
+  <label class="purplelbl2 label label-default">Lives: {{ lives }} </label>
+</p>
+<button type="button" class="startbtn btn  btn-lg" *ngIf="!$stopped.value" (click)="$stopped.next(true)">Stop</button>
+<button class="restartbtn btn  btn-lg" *ngIf="lives <= 0" (click)="setUpGame()">Restart</button>
+<button type="button" class="backbtn btn  btn-lg" *ngIf="$stopped.value" (click)="$stopped.next(false)" routerLink="/menu">Back</button>
+</div>

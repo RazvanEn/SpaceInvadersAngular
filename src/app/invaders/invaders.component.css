@@ -1,0 +1,64 @@
+p {
+  font-family: Lato;
+}
+html, body {
+    overflow: hidden;
+}
+
+.canvas-container{
+  height: 100vh;
+}
+.startbtn {
+  position:absolute;
+  background-color : #6d2a8c;
+  color : black;
+  border: none;
+  left:80%;
+  top:10%
+}
+
+.purplelbl{
+	position:absolute;
+	background-color : #6d2a8c;
+	left:80%;
+  	top:20%
+}
+
+.purplelbl1{
+	position:absolute;
+	background-color : #6d2a8c;
+	left:80%;
+  	top:25%
+}
+
+.purplelbl2{
+	position:absolute;
+	background-color : #6d2a8c;
+	left:80%;
+  	top:30%
+}
+
+.purplelbl3{
+	position:absolute;
+	background-color : #6d2a8c;
+	left:50%;
+  	top:50%
+}
+
+.restartbtn {
+  position:absolute;
+  background-color : #6d2a8c;
+  color : black;
+  border: none;
+  left:85%;
+  top:35%
+}
+
+.backbtn {
+  position:absolute;
+  background-color : #6d2a8c;
+  color : black;
+  border: none;
+  left:85%;
+  top:60%
+}
